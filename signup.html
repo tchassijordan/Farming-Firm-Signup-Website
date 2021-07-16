@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <div class="page">
+        <img src="./images/dice.jpg">
+        <div class="container">
+            <button class="login" id="login">Log In</button>
+            <button class="signup" id="signup">Sign Up</button>
+            <div class="login-container" id="login-container">
+                <header>Log In</header>
+                <form action="">
+                    <label for="email" class="Email">Email </label>
+                    <input type="email" name="useremail" id="email" placeholder="Enter Email" 
+                    required>
+                    <span>Only emails of Google, Yahoo and Iphone are valid</span>
+                    <label for="password" class="Password">Password </label>
+                    <input type="password" name="password" id="password" 
+                    placeholder="Enter Password" required>
+                    <span class="checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox"> Remember Me
+                    </span>
+                    <button class="login" id="submit-login" type="button">Log In</button>
+                </form> 
+            </div>
+            <form>
+                <div class="email" id="form1">
+                    <header>Sign UP</header>
+                   
+                        <label for="email" class="Email">Email </label>
+                        <input type="email" name="useremail" id="email" placeholder="Enter Email" 
+                        required>
+                        <span>Only emails of Google, Yahoo and Iphone are valid</span>
+                        <label for="name" class="Username">User Name</label>
+                        <input type="text" name="username" id="name" placeholder="User Name" required>
+                        <button class="next" id="next" >Next</button>
+                  
+                </div>
+                <div class="password" id="form2"> 
+                    <header>Proceed with password...</header>
+                        <label for="password" class="Password">Password </label>
+                        <input type="password" name="password" id="password" 
+                        placeholder="Enter Password" required minlength="8"> 
+                        <span>Password must be of atleast 8 characters and must have a number, 
+                            and capital letter </span>
+                        <label for="re-password" class="Re-Password">Confirm Password</label>
+                        <input type="password" name="re-password" id="re-password" placeholder=
+                        "Confirm Password" required>
+                        <span id="mismatch"><solid>Password mismatch</solid></span>
+                        <button class="back" id="back">Back</button>
+                        <button class="submit" type="button" id="submit-signup">Sign Up</button> 
+                </div> 
+            </form>
+            
+        </div>
+        <div class="logo">ATENNA</div>
+    </div>
+    <script src="./javascript/signup.js"></script>
+</body>
+</html>

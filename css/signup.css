@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+.page {
+    background-color: black;
+    width: 100%;
+    height: 750px;
+    padding: 5px 6px;
+    position: relative;
+    overflow: auto;
+    border: 5px solid red;
+}
+.page img {
+    height: 100%;
+    width: 100%;
+}
+.container{
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    top: 50px;
+    left: 150px;
+    background-color: rgba(17, 15, 15, 0.575);
+    position: absolute;
+}
+.login-container {
+    display: none;
+}
+.login-container button {
+    top: 400px;
+} 
+.checkbox {
+    top: 360px;
+    display: block;
+    color: white;
+    left: 10px;
+}
+.login-container .Password {
+    top: 275px;
+}
+.email {
+    display: none;
+}
+.email header, .login-container header {
+    color: white;
+    position: absolute;
+    top: 75px;
+    left: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-style: italic;
+}
+.Email, .Password {
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+}
+input[type="email"], .password input[type="password"] {
+    top: 180px;
+    left: 30px;
+    width: 330px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+form span {
+    position: absolute;
+    color: rgba(255, 0, 0, 0.774);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, bold;
+    font-size: 13px;
+    top: 230px;
+    word-wrap: break-word;
+    font-style: italic;
+    padding: 0px 30px;
+}
+.Username, .Re-Password {
+    display: block;
+    position: absolute;
+    top: 275px;
+    left: 30px;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+}
+input[type="text"], #re-password, .login-container input[type="password"]{
+    top: 305px;
+    left: 30px;
+    width: 330px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+.next, .back, .submit, .login, .signup {
+    position: absolute;
+    background-color: skyblue;
+    width: 100px;
+    height: 50px;
+    border-radius: 75px;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 20px;
+    top: 400px;
+    left: 150px;
+    cursor: pointer;
+}
+.back:hover, .submit:hover, .login:hover, .signup:hover, .next:hover {
+    background-color: rgb(68, 59, 59);
+}
+.back {
+    left: 65px;
+}
+.submit {
+    left: 235px;
+}
+.login {
+    top: 150px;
+    display: block;
+}
+.signup {
+    top: 250px;
+    display: block;
+}
+.password {
+    display: none;
+} 
+.password header {
+    color: white;
+    position: absolute;
+    top: 75px;
+    left: 30px;
+    font-size: 25px;
+    font-style: italic;
+    word-wrap: break-word;
+}
+.logo {
+    color: rgba(255, 0, 0, 0.774);
+    text-align: center;
+    width: 400px;
+    height: 125px;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 100px;
+    top: 150px;
+    position: absolute;
+    left: 800px;
+    border: 3px solid red;
+}
+.links {
+    position: absolute;
+    display: flex;
+    float: left;
+    justify-content: start;
+    left: 700px;
+    top: 5px;
+    background-color: rgba(43, 33, 33, 0.623);
+    
+}
+.links a {
+   width: 100px;
+   height: 45px;
+   text-decoration: none;
+   padding: 15px 10px;
+   text-align: center;
+   border: 2px solid rgba(63, 21, 61, 0.507);
+   color: white;
+}
+.links a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+.password #mismatch {
+    display: none;
+    top: 365px;
+    position: absolute;
+}

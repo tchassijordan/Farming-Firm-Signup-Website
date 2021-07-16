@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Documents/javascriptPrograms/Test2/iconcss/all.css">
+	<link rel="stylesheet" href="../../Documents/javascriptPrograms/Test2/iconcss/fontawesome.min.css">
+        <title>User Account</title>
+    <style>
+        * {
+          box-sizing: border-box; 
+          margin: 0 !important; 
+        }
+        .main {
+            background-color: rgba(163, 145, 145, 0.829);
+        }
+        .main .nav {
+            display: inline-block;
+            background-color: rgba(66, 55, 55, 0.575);
+            height: 60px;
+            width: 100%;
+            padding: 10px 0px 10px 0px;
+            position: absolute;
+        }
+        .main .nav a {
+            text-decoration: none;
+            font-size: 18px;
+            height: 40px;
+            padding: 11px 5px 11px 5px;
+            color: black;
+            left: 20px;
+            font-family: fantasy;
+            display: block;
+            float: left;
+        }
+        .main .nav .avatar {
+            background-color: black;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            right: 10px;
+            display: block;
+            top: 10px;
+        }
+        .main .side-bar {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            height: 90vh;
+            background-color: silver;
+            top: 60px;
+            position: absolute;
+        }
+        .main .side-bar a {
+            text-decoration: none;
+            font-size: 18px;
+            height: 40px;
+            padding: 11px 5px 11px 5px;
+            color: black;
+        }
+        .main .side-bar a span {
+            position: absolute;
+            left: 30px;
+        }
+        .main .side-bar a:hover, .main .side-bar a:focus {
+            background-color: rgba(66, 55, 55, 0.575);
+            border-radius: 15px;
+        }
+        .main .side-bar i:last-child {
+            padding: 11px 5px 11px 5px;
+            font-size: 18px;
+        }
+        .sub-main {
+            position: absolute;
+            left: 20%;
+            top: 60px;
+            height: 90vh;
+            width: 80%;
+            background-color: rgba(219, 205, 205, 0.918);
+        }
+        .row, .row1 {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            align-items: none;
+            justify-content: space-around;
+            position: relative;
+            padding: 20px 20px;
+        }
+        .listing{
+            width: 250px;
+            height: 300px;
+            background-color: grey;
+            border-radius: 15px;  
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <a href="signup.html">Home</a>
+            <a href="">User Account</a>
+            <span class="avatar"></span>
+        </div>
+        <div class="side-bar">
+            <a href=""><i class="fas fa-inbox"></i><span>Inbox</span></a>
+            <a href=""><i class="fas fa-boxes"></i><span>Market</span></a>
+            <a href=""><i class="fas fa-cloud-upload-alt"></i><span>Upload</span></a>
+            <a href=""><i class="fas fa-certificate"></i><span>Premium</span></a>
+            <i class="fas fa-question-circle"></i>
+            
+        </div>
+        <div class="sub-main">
+            <div class="row">
+                <div class="listing"></div>
+                <div class="listing"></div>
+                <div class="listing"></div>
+                <div class="listing"></div>
+            </div>
+            <div class="row1">
+                <div class="listing"></div>
+                <div class="listing"></div>
+                <div class="listing"></div>
+                <div class="listing"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
