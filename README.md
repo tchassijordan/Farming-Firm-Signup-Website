@@ -1,17 +1,26 @@
 # Atenna Signup
-Atenna Signup is the realization of a sign up and sign in to a company called ATENNA. 
+Atenna Signup is the realization of a sign up and sign in to a company called ATENNA (learn about ATENNA <a href="../Farming-Firm-Website/README.md">in this README file</a>).
+<br />
+User can creates an account by clicking on the sign up button. Fills in the necessary data required, that is email, username, and password in a form. 
 
-The user creates an account on ATENNA's main site.  
+On form submission Javascript does certain data verification and validation before the signup process can be valid like: 
+<ul>
+    <li>If the account doesn't exist already</li>
+    <li>If the certain data is not empty, or if passwords are greater than 8 figuers</li>  
+</ul>
 
-Certain verifications are done before the signup can be valid like: 
-<li>If the account doesn't exist already</li>
-<li>If the data enter follow the norms and are valid</li>  
+After signup validated the user's data is stored in an object and the object is stored in browser's local storage.
+The user is then redirected to the company's homepage or a user-account page.
 
-After signup complete the user is redirected to a a user account page. 
-
-The user also has the possibility to sign in to an already existing account via login, verifications are also made to ensure account is valaid and in the system already. After the verifications the user is redirected to user account page. 
+User also has the possibility to sign into an already existing account via login button, javascript does data verification and validation to ensure account is valid and in the system already. After the verifications the user is redirected to the company's homepage or a user-account page. 
 
 I used the browser's local storage for all data persistency.
+Javascript is also used to make the form a multiple step form.
+
+#### Note
+This project renders user authentification for a farming firm company called ATENNA. For user to be redirected to ATENNA's homepage after sign up or sign in you'll need ATENNA's main website source codes, which are found <a href="../Farming-Firm-Website">in this repository</a>
+<br />
+But for the sake of making this project independent I have created a user account page, where user is redirected to if ATENNA source code can't be found.
 
 ---
 
@@ -23,7 +32,7 @@ I used the browser's local storage for all data persistency.
 
 ## Coming Soon
 - [ ] External storage implementation
-- [ ] Multiple accounts
+- [ ] Multiple accounts: since am using the browser's local storage adding the possibility for a multiple users to have accounts
 
 ---
 
