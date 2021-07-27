@@ -53,7 +53,11 @@ function store() {
             console.log(back_strg); //the object isn't being displayed in console because of window.location 
             /* Only if the passwords match, the values of the different form input are 
             stored in an object */
-            window.location = "user-account.html"; //when all is done redirect to userAccount
+            var location = window.location = "../Farming-Firm-Website/accueil.html"; //when all is done redirect to userAccount
+            if(!location) {
+                location = window.location = "./user-account.html";
+            }
+            return location
         } else {
             alert("input another password");
         } 
@@ -122,7 +126,11 @@ function userAccount(event) {
     if (input3[0].value !== "" && input3[1].value !== "") {
         if((input3[0].value == entryEmail) && (input3[1].value == entryPassword)) {
                 console.log("valid");
-                window.location = "user-account.html"; //when all is done redirect to userAccount
+                var location = window.location = "../Farming-Firm-Website/accueil.html"; //when all is done redirect to Accueil
+                if(!location) {
+                    location = window.location = "./user-account.html";
+                }
+                return location 
         } else {
             alert("account not found");
         }
